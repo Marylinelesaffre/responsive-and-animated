@@ -21,11 +21,77 @@ body {background-color: rgb(245, 245, 245);}
 header, footer {background-color: rgb(220, 220, 220);}
 
 
+
 img {
     width: 400px;
 }
-@media (max-width: 480px) {
+@media screen and (orientation:landscape) {
     img {
-        width: 100%;
+        width: auto;
+        
     }
 }
+header {
+    display: flex;
+    flex-direction:row;
+    text-align:center;
+    
+    }
+   @media screen and (max-width: 530px) {
+    header {flex-direction: column;}
+  }  
+
+ #section-1 div 
+ { box-shadow: -1px 1px 10px 3px;
+    flex-wrap: wrap;
+    border: 15px;
+    margin: 15px;
+    height: 300px;
+    width: 300px;
+    }
+    
+    
+#section-2 div div div 
+{box-shadow: -1px 1px 10px 3px;
+    width: 150px;
+    height: 150px;
+    border-radius:50% ;
+    margin: 15px;
+    flex-wrap: wrap-reverse;
+    }
+    #grid{
+        height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row; 
+        text-align: center;
+        font-size: 30px;
+        line-height:150px;
+         }
+        
+
+         #grid {display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 10px;
+            padding: 10px;}
+         div :nth-child(1) { grid-column-start: 3;
+            grid-column-end: 3;}
+        
+          div :nth-child(2) {grid-row-start: 2;grid-column-start:2 ;}
+        
+          div :nth-child(3) {grid-row-start: 2;grid-column-start: 4;}
+        
+          div :nth-child(4)  {grid-row-start: 3;grid-column-start: 1;}
+          div :nth-child(5) {grid-row-start: 3;grid-column-start: 3;}
+        
+          div  :nth-child(6) {grid-row-start:3;grid-column-start:5}
+           
+         
+
+          footer {
+            height: 200px;
+          }
+
+         
+        
+            
